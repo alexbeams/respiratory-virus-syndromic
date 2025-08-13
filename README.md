@@ -2,7 +2,7 @@
 
 The files in this repository reproduce benchmarking results (Figure 2 of the main text) and the two-virus simulation results from the Supplementary material. It also includes code to generate Figure 3 of the main text, but it is necessary to acquire data from BioMérieux to generate results. 
 
-All codes are developed for R (version 4.4.2).
+All codes are developed for R (version 4.4.2). We ran our analysis on Linux and MacOS. Slight modifications are needed for Windows.
 
 The data for the main analysis are not publicly available. Reasonable request for access must be made to BioMérieux. We have included the codes to run the analysis for the version of the dataset they provided to us.
 
@@ -10,6 +10,9 @@ Required R packages:
   - deSolve (simulates ODEs)
   - Rcpp (compiling and solving differential equations in C/C++)
   - parallel (allows for parallel computation)
+
+# Note for Windows users:
+The code model_functions.R contains the model definition for the differential equations. We solve the ODEs in C/C++, and this invovles creating a compiled object. The C file is sirmod/sir.c. On Linux and MacOS, the compiled object will be sir.so. On Windows, this it is sir.dll (if memory serves). The code is currently written to work for Linux/MacOS, but you will need to manually change the file extension from .so to .dll (this is toward the beginning of model_functions.R).
 
 ## General overview of codes:
 We have also distributed code in two folders: main, and supplement. These contain more specific codes for generating figures in those sections of the manuscript. There is also a folder called sirmod/ that contains C/C++ files for rapidly simulating the differential equations (the main one being sir.c).
