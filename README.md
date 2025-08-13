@@ -19,4 +19,4 @@ main:
 
 supplement:
   - 2virusModels: this folder contains the code to generate Figures S25-27, which describe results of fitting single-pathogen SIRS models to simulated data produced by 2-virus models
-  - Note that Figures 
+  - Note: the supplmental figures that display profile loglikelihoods are visualized using plotEpiPar and plotPsiPar for the ensemble MCMC output obtained by fitting models to the BioMéreiux data. 
