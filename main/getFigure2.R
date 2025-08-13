@@ -1,8 +1,8 @@
 # generate the simulations:
-source('Figure3/benchmarking_sim.R')
+source('Figure2/benchmarking_sim.R')
 
 # fit to the simulations using the ensemble MCMC method:
-source('Figure3/benchmarking_est.R')
+source('Figure2/benchmarking_est.R')
 
 # read in the ensemble MCMC output in the simdatfits folder 
 # and reproduce boxplots and histograms as in Figure 3 of the main text. 
