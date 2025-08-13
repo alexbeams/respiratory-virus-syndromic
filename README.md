@@ -5,8 +5,8 @@ The files in this repository reproduce benchmarking results (Figure 3 of the mai
 The data for the main analysis are not publicly available. Reasonable request for access must be made to BioMérieux. We have included the codes to run the analysis for the version of the dataset they provided to us.
 
 Required R packages:
--deSolve
--parallel
+  -deSolve (simulates ODEs)
+  -parallel (allows for parallel computation)
 
 main:
   - vignette.R is relatively quick to run. It simulates a dataset, and fits the SIRS model to that dataset using an ensemble MCMC sampling method (100 timesteps by default, which often produces clear profile loglikelihoods when initializing near the true values used in the simulations).
