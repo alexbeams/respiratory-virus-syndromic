@@ -10,6 +10,8 @@ Required R packages:
   - deSolve (simulates ODEs)
   - Rcpp (compiling and solving differential equations in C/C++)
   - parallel (allows for parallel computation)
+  - xtable (display parameter tables in LaTeX)
+  - scales (transparency in plots)
 
 # Note for Windows users:
 The code model_functions.R contains the model definition for the differential equations. We solve the ODEs in C/C++, and this invovles creating a compiled object. The C file is sirmod/sir.c. On Linux and MacOS, the compiled object will be sir.so ("shared object"). On Windows, it is sir.dll ("dynamically loaded library"). The code is currently written to work for Linux/MacOS, but you will need to manually change the file extension from .so to .dll in model_functions.R (the R file is annotated so hopefully it is obvious where the edit needs to be made).
