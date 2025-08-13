@@ -8,4 +8,11 @@ Required R packages:
 -deSolve
 -parallel
 
-Included files:
+main:
+  - vignette.R is relatively quick to run. It simulates a dataset, and fits the SIRS model to that dataset using an ensemble MCMC sampling method (100 timesteps by default).
+  - getFigure2.R will reproduce Figure 2 of the main text. It simulates 180 datasets (by default), and fits models using an ensemble MCMC sampling method. By default, this only runs for 5 timesteps (but we used 2000 timesteps to generate the results for Figure 2 in the main text). The functions plotEpiPar and plotPsiPar defined in plotfunctions.R are useful for assessing convergence of the ensemble MCMC method (the solution is usually to increase timesteps and ensemble size)
+  - Figure 2: this folder contains the code to generate Figure 2 (benchmarking results using simulations)
+  - Figure 3: this folder contains code to generate Figure 3, but will not run correctly unless you obtain the data from BioMérieux
+
+supplement:
+  - 2virusModels: this folder contains the code to generate Figures S25-27, which describe results of fitting single-pathogen SIRS models to simulated data produced by 2-virus models
