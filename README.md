@@ -12,7 +12,7 @@ Required R packages:
   - parallel (allows for parallel computation)
 
 # Note for Windows users:
-The code model_functions.R contains the model definition for the differential equations. We solve the ODEs in C/C++, and this invovles creating a compiled object. The C file is sirmod/sir.c. On Linux and MacOS, the compiled object will be sir.so ("shared object"). On Windows, it is sir.dll ("dynamically loaded library"). The code is currently written to work for Linux/MacOS, but you will need to manually change the file extension from .so to .dll (or but obtaining a Linux machine might be a better choice in the long run).
+The code model_functions.R contains the model definition for the differential equations. We solve the ODEs in C/C++, and this invovles creating a compiled object. The C file is sirmod/sir.c. On Linux and MacOS, the compiled object will be sir.so ("shared object"). On Windows, it is sir.dll ("dynamically loaded library"). The code is currently written to work for Linux/MacOS, but you will need to manually change the file extension from .so to .dll.
 
 ## General overview of codes:
 We have also distributed code in two folders: main, and supplement. These contain more specific codes for generating figures in those sections of the manuscript. There is also a folder called sirmod/ that contains C/C++ files for rapidly simulating the differential equations (the main one being sir.c).
