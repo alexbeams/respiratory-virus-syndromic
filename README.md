@@ -2,7 +2,7 @@
 
 The files in this repository reproduce benchmarking results (Figure 2 of the main text) and the two-virus simulation results from the Supplementary material. It also includes code to generate Figure 3 of the main text, but it is necessary to acquire data from BioMérieux to generate results. 
 
-All codes are developed for R (version 4.4.2). We ran our analysis on Linux and MacOS. Slight modifications are needed for Windows.
+All codes are developed for R (version 4.4.2). We ran our analysis on Linux and MacOS. Slight modifications are needed for Windows (see just below).
 
 The data for the main analysis are not publicly available. Reasonable request for access must be made to BioMérieux. We have included the codes to run the analysis for the version of the dataset they provided to us.
 
