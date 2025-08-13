@@ -2,7 +2,7 @@
 
 The files in this repository reproduce benchmarking results (Figure 3 of the main text) and the two-virus simulation results from the Supplementary material. All codes are in R (version 4.4.2).
 
-The data for the main analysis are not publicly available. Reasonable request for access must be made to BioMérieux.
+The data for the main analysis are not publicly available. Reasonable request for access must be made to BioMérieux. We have included the codes to run the analysis for the version of the dataset they provided to us.
 
 Required R packages:
 -deSolve
