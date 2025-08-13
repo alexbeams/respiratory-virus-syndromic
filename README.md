@@ -34,4 +34,9 @@ other subdirectories in main:
 
 ## General overview of codes in supplement:
   - 2virusModels/: this directory contains the code to generate Figures S25-27, which describe results of fitting single-pathogen SIRS models to simulated data produced by 2-virus models. If you set your working directory in 2virusModels, running get2VirusSims.R will generate the simulations with two cocirculating viruses, and then running fitModels.R will fit single-virus SIRS models to aggregated detections of those simulations. It should produce figures analagous to Figures S25-27 of the supplement (they will differ slightly because of stochasticity).
-  - Note: the supplmental figures that display profile loglikelihoods are visualized using plotEpiPar and plotPsiPar for the ensemble MCMC output obtained by fitting models to the BioMéreiux data. 
+  - ModelFiles directory: this conains C/C++ code to simulate a 9-state, two-virus SIRS model
+  - sirmod directory: this is an exact copy of the sirmod subdirectory in main; needed for fitting single-virus models to two-virus simulations
+  - get2VirusSims.R - this simulates the two-virus model and aggregates detections; stores simulated counts (simdats) and aggregated detections (dfs) in the 2virussims subdirectory
+  - fitModels.R - this fits single-virus SIRS models to the simulated counts from the two-virus models
+  - extra copies of model_functions.R, plotfunctions.R, ensemble_sampler.R for convenience
+  - Note: the supplmental figures that display profile loglikelihoods are visualized using the plotEpiPar and plotPsiPar functions from plotfunctions.R for the ensemble MCMC output obtained by fitting models to the BioMéreiux data. 
