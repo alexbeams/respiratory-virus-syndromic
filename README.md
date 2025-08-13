@@ -1,6 +1,6 @@
 # Codes for the manuscript: Estimating respiratory virus parameters from syndromic data: Using mathematical models to correct biases
 
-The files in this repository reproduce benchmarking results (Figure 2 of the main text) and the two-virus simulation results from the Supplementary material. It also includes code to generate Figure 3 of the main text, but it is necessary to acquire data from BioMérieux to generate results (we cannot post the data publicly). 
+The files in this repository reproduce benchmarking results (Figure 2 of the main text) and the two-virus simulation results from the Supplementary material. It also includes code to generate Figure 3 of the main text and the rest of the supplementary plots, but it is necessary to acquire data from BioMérieux to generate results (we cannot post the data publicly). 
 
 All codes are developed for R (version 4.4.2). We ran our analysis on Linux and MacOS. Slight modifications are needed for Windows (see just below).
 
